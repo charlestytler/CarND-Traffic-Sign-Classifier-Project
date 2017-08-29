@@ -7,7 +7,7 @@
 **Build a Traffic Sign Recognition Project**
 
 The goals / steps of this project are the following:
-* Load the data set (see below for links to the project data set)
+* Load the data set 
 * Explore, summarize and visualize the data set
 * Design, train and test a model architecture
 * Use the model to make predictions on new images
@@ -17,15 +17,15 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./writeup_images/hist_train.jpg "Training Set Histogram"
-[image2]: ./writeup_images/hist_valid.jpg "Validation Set Histogram"
-[image3]: ./writeup_images/hist_test.jpg "Test Set Histogram"
+[image1]: ./writeup_images/hist_train.png "Training Set Histogram"
+[image2]: ./writeup_images/hist_valid.png "Validation Set Histogram"
+[image3]: ./writeup_images/hist_test.png "Test Set Histogram"
 [image4]: ./writeup_images/preprocessed_images.png "Preprocessed Images"
-[image11]: ./German_Sign_Test_Images/sign1_scaled.png "Traffic Sign 1"
-[image12]: ./German_Sign_Test_Images/sign2_scaled.png "Traffic Sign 2"
-[image13]: ./German_Sign_Test_Images/sign3_scaled.png "Traffic Sign 3"
-[image14]: ./German_Sign_Test_Images/sign4_scaled.png "Traffic Sign 4"
-[image15]: ./German_Sign_Test_Images/sign6_scaled.png "Traffic Sign 5"
+[image11]: ./German_Sign_Test_Images/sign1_scaled.jpg "Traffic Sign 1"
+[image12]: ./German_Sign_Test_Images/sign2_scaled.jpg "Traffic Sign 2"
+[image13]: ./German_Sign_Test_Images/sign3_scaled.jpg "Traffic Sign 3"
+[image14]: ./German_Sign_Test_Images/sign4_scaled.jpg "Traffic Sign 4"
+[image15]: ./German_Sign_Test_Images/sign6_scaled.jpg "Traffic Sign 5"
 [image30]: ./writeup_images/sign30_grayscale.png "30 Grayscale"
 [image31]: ./writeup_images/sign30_layer1.png "30 Layer 1"
 [image32]: ./writeup_images/sign30_layer2.png "30 Layer 2"
@@ -33,12 +33,9 @@ The goals / steps of this project are the following:
 [image81]: ./writeup_images/sign80_layer1.png "80 Layer 1"
 [image82]: ./writeup_images/sign80_layer2.png "80 Layer 2"
 
----
-### README
+#### Project Code
 
-####1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
-
-You're reading it! and here is a link to my [project code](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
+[Link to iPython Notebook](https://github.com/charlestytler/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
 
 ### Data Set Summary & Exploration
 
@@ -78,7 +75,7 @@ An example of each class of traffic sign after the grayscale and histogram equal
 ![Pre-Processed Image Examples][image4]
 
 #### 2. Model Architecture
-My final model uses 3 convolution layers with Max Pooling after the first and third layers. The output of the final layer is flattened and passed through 4 fully connected hidden layers.
+My final model uses 3 convolution layers with Max Pooling after the first and third layers. The output of the final layer is flattened and passed through 4 fully connected layers, with a dropout for regularization.
 
 My final model consisted of the following layers:
 
@@ -103,7 +100,7 @@ My final model consisted of the following layers:
 | Dropout		|   Keeps 25% of Activations  |
 | Fully connected	|   outputs 43        |
 | Softmax		|       	|
-											|
+
 
 #### 3. Training the Model
 
@@ -203,16 +200,27 @@ I thought that the training set may not have had a variety of different scalings
 As a quick look at the identification being performed by my model, I created images of the feature maps for the first two convolution layers comparing the 30 km/h and 80 km/h speed limit signs:
 
 30 km/h Speed Limit with Grayscale Preprocessing:
+
 ![30_Grayscale][image30]
+
 80 km/h Speed Limit with Grayscale Preprocessing:
+
 ![80_Grayscale][image80]
+
 30 km/h Speed Limit output of Layer 1:
+
 ![30_Layer1][image31]
+
 80 km/h Speed Limit output of Layer 1:
+
 ![80_Layer1][image81]
+
 30 km/h Speed Limit output of Layer 2:
+
 ![30_Layer2][image32]
+
 80 km/h Speed Limit output of Layer 2:
+
 ![80_Layer2][image82]
 
 
