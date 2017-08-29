@@ -141,6 +141,7 @@ Discuss the model's predictions on these new traffic signs and compare the resul
 Here are the results of the prediction:
 
 <img src="./German_Sign_Test_Images/sign1_scaled.jpg" width="100" height="100" />
+
 * 87.5%	Speed limit (30km/h)	Occurences in Training Set = 720
 * 10.4%	Speed limit (80km/h)	Occurences in Training Set = 630
 * 0.6%	Speed limit (20km/h)	Occurences in Training Set = 60
@@ -151,6 +152,7 @@ The model correctly predicts the 30 km/h sign, and as expected also predicts wit
 
 
 <img src="./German_Sign_Test_Images/sign2_scaled.jpg" width="100" height="100" />
+
 * 90.1%	Speed limit (60km/h)	Occurences in Training Set = 450
 * 9.9%	Speed limit (80km/h)	Occurences in Training Set = 630
 * 0.0%	Speed limit (30km/h)	Occurences in Training Set = 720
@@ -161,6 +163,7 @@ Sign 2 is incorrectly determined to be a 60 km/h sign, however the correct class
 
 
 <img src="./German_Sign_Test_Images/sign3_scaled.jpg" width="100" height="100" />
+
 * 99.9%	No vehicles         	Occurences in Training Set = 210
 * 0.1%	Speed limit (120km/h)	Occurences in Training Set = 450
 * 0.0%	Speed limit (80km/h)	Occurences in Training Set = 630
@@ -171,6 +174,7 @@ Sign 3 is pretty much dead on as a No Vehicles sign, as expected for a mostly fe
 
 
 <img src="./German_Sign_Test_Images/sign4_scaled.jpg" width="100" height="100" />
+
 * 24.7%	Speed limit (60km/h)	Occurences in Training Set = 450
 * 22.6%	Speed limit (80km/h)	Occurences in Training Set = 630
 * 16.7%	Turn left ahead     	Occurences in Training Set = 120
@@ -181,6 +185,7 @@ Sign 4 proves difficult for the model and it doesn't really have a strong predic
 
 
 <img src="./German_Sign_Test_Images/sign6_scaled.jpg" width="100" height="100" />
+
 * 53.3%	Roundabout mandatory		Occurences in Training Set = 90
 * 13.0%	End all speed/passing limits	Occurences in Training Set = 60
 * 5.9%	Go straight or left 		Occurences in Training Set = 60
