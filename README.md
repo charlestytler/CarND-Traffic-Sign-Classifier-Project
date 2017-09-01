@@ -82,10 +82,10 @@ My final model consisted of the following layers:
 | Layer         		|     Description		| 
 |:---------------------:|:-------------------------------------:| 
 | Input         		| 32x32x1 Grayscale image  		| 
-| Convolution 3x3     	| 1x1 stride, valid padding, outputs 28x28x24 	|
+| Convolution 5x5     	| 1x1 stride, valid padding, outputs 28x28x24 	|
 | RELU			|             |
 | Max pooling	      	| 2x2 stride,  outputs 14x14x24 	|
-| Convolution 3x3     	| 1x1 stride, valid padding, outputs 11x11x32 	|
+| Convolution 4x4     	| 1x1 stride, valid padding, outputs 11x11x32 	|
 | RELU			|             |
 | Convolution 3x3     	| 1x1 stride, valid padding, outputs 9x9x64	|
 | Max pooling	      	| 2x2 stride,  outputs 4x4x64	|
